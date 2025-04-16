@@ -301,12 +301,12 @@ nav a:hover {
   }
 
   /* STYLE SCROLL UP */
-  .scroll-up {
+  #scroll-up {
    
     width: 30px;
     height: 30px;
     border-radius: 50%;
-
+    z-index: 999;
     box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
     position: relative; /* memastikan konteks posisi */
     display: inline-block;
@@ -314,10 +314,12 @@ nav a:hover {
   }
 
 
-  .scroll-up img {
+  #scroll-up img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;  /* Pastikan kursor berubah saat melayang di atas gambar */
+  pointer-events: auto;
   }
 
 /* ASKUS STYLE */
