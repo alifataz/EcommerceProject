@@ -1,0 +1,346 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.logo img{
+    width: 100%;
+}
+
+
+/* @font-face {
+    font-family: zarafont;
+    src: url(OPTIBodoni-Antiqua.otf);
+} */
+
+
+nav{
+    position: fixed;
+    right: 0;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    padding: 0px 20px;
+    font-size: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+ /* 3 SIDEBAR ICON */
+ .menu-btn {
+    padding: 35px 35px 15px 0;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu-btn span {
+    display: block;
+    height: 2px;
+    background-color: #333;
+    border-radius: 2px;
+  }
+
+  /* STYLE MAIN BODY */
+
+  main{
+    width: 75%;
+    margin: 0 auto;
+
+  }
+  .carousel{
+    margin-top: 200px;
+    background-color: black;
+    color: white;
+    height: 500px;
+    position: relative;
+  }
+@font-face {
+    font-family: hnmfont;
+    src: url(Cindie2-S.ttf) format(truetype);
+}
+  .textcarousel{
+    padding: 125px 0 0 50px;
+ 
+  }
+  .hit{
+    font-family: hnmfont;
+    font-size: 40px;
+  }
+  .imgchat{
+    position: absolute;
+    right: 5px;
+    width: 3%;
+  }
+  .ket{
+    font-size: 10.5px;
+    display: flex;
+   
+  }
+  .ket p{
+    flex: 2;
+  }
+  .beli{
+    flex: 1;
+  }
+  .beli a  {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: black;
+  }
+
+  .beli a img{
+    width: 4%;
+    padding-left: 5px;
+  }
+
+  /* STYLE MAIN BODY RAMADAN */
+
+  .grid-container{
+    display: grid;
+    position: relative;
+ 
+  }
+
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .item-small img{
+    width: 100%;
+    height: 90%;
+  }
+  
+.item-large{
+    position: relative;
+    grid-column: 1 / 3;
+}
+.item-small{
+    position: relative;
+}
+  .caption {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: hnmfont;
+  }
+ 
+  .text{
+    position: relative;
+    width: 100%;
+  }
+  .captions{
+    font-family: hnmfont;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .caption a, .captions a {
+    color: black;
+    font-size: 10.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    float: right;
+    background-color: white;
+    padding: 5px 10px;
+  }
+  .captions a{
+    color: black;
+    font-size: 10.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    float: right;
+  }
+
+  
+    /* .item-large {
+        grid-column: span 1;
+    } */
+    
+    /* @media (min-width: 768px) {
+        .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        } */
+  
+/* STYLE MAIN BODY NEW ARRIVAL */
+.newmenu{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-left: 10px;
+    margin-top: 50px;
+}
+.lihat a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.grid-newlist{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+   background-color: rgb(244, 244, 244);
+}
+.grid-img img {
+    width: 100%;
+    height: 100%;
+   
+  }
+
+  /* FOOTER STYLE */
+
+  .footer-container{
+    display: flex;
+    margin-top: 120px;
+    font-size: 14px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+  }
+  .footer-container p{
+    font-weight: bold;
+  }
+
+  .temukan{
+    flex: 2;
+  }
+  .info{
+    flex: 2;
+  }
+  .bantuan{
+    flex: 2;
+  }
+  .lacak{
+    flex: 2;
+    line-height: 22px;
+  }
+  .info ul, .bantuan ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  #lacakket{
+    font-weight: normal;
+    font-size: 11px;
+  }
+  #search{
+    width: 85%;
+    height: 35px ;
+  }
+  #search-button{
+    width: 90%;
+    height: 55px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .temukan .sosmed li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+  }
+  .temukan img{
+    width: 20px;
+    height: 20px;
+  }
+  .temukan ul{
+  padding-left: 0;
+  
+  }
+  .download{
+    margin-top: 30px;
+  }
+  .getit li{
+    display: inline;
+    list-style-type: none;
+  }
+  .getit img{
+  width: 130px;
+    height: 40px;
+  }
+  .panahscroll{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    pointer-events: none;
+  }
+
+  /* STYLE SCROLL UP */
+  .scroll-up {
+   
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
+    position: relative; /* memastikan konteks posisi */
+    display: inline-block;
+    overflow: hidden;
+  }
+
+
+  .scroll-up img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* ASKUS STYLE */
+.askus{
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  pointer-events: none;
+}
+.ask {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.ask img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
